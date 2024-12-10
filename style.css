@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#current-dish-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ingredient-tray,
+.preparation-area {
+    margin-bottom: 20px;
+}
+
+#ingredients,
+#prep-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    min-height: 50px;
+}
+
+.ingredient {
+    padding: 10px;
+    font-size: 24px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.ingredient:hover {
+    background-color: #f0f0f0;
+}
+
+.check-button,
+.start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-button:hover,
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feedback.correct {
+    color: #28a745;
+}
+
+.feedback.incorrect {
+    color: #dc3545;
+}
